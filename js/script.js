@@ -56,7 +56,7 @@ for(let i = 0; i<numbers.length; i++) {
 
 // Aggiungo event listener al form
 form.addEventListener('submit', (event) => {
-    event.preventDefault(); // Previene il comportamento predefinito del form
+    event.preventDefault(); 
 
     const userNumbers = [];
     const inputs = form.querySelectorAll('input');
@@ -70,7 +70,6 @@ form.addEventListener('submit', (event) => {
 
     const correctNumbers = numbers.filter(num => userNumbers.includes(num));
     
-
     if (correctNumbers.length === numbers.length) {
         istructions.innerText = 'Complimenti! Hai indovinato tutti i numeri!';
     } else {
